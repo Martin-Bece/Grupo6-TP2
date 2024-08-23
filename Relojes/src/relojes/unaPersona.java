@@ -11,17 +11,25 @@ public class unaPersona {
     private String apellido;
     private int edad;
     private double altura;
-    public Reloj r1;
+    private RelojFit r1;
+    
 
-    public unaPersona(String nombre, String apellido, int edad, double altura, Reloj r1) {
+    public unaPersona(String nombre, String apellido, int edad, double altura, RelojFit r1) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.altura = altura;
         this.r1 = r1;
     }
+
+    public RelojFit getRF() {
+        return r1;
+    }
+
+    public void setRF(RelojFit r1) {
+        this.r1 = r1;
+    }
     
-     
     
     public String getNombre() {
         return nombre;
